@@ -1,0 +1,26 @@
+npm -v
+npm init
+npm install express
+
+npm install --save body-parser@1.19.0 dotenv@8.2.0 ejs@3.1.5 express@4.17.1
+npm install --save-dev @babel/core@7.12.10 @babel/preset-env@7.12.10 @babel/node@7.12.10 nodemon@2.0.7
+Trong quá trình dev thì làm vậy, còn khi lên product thì sẽ xử lý sau
+
+npm outdated
+fix babel-node' is not recognized as an internal or external command
+"nodemon --exec npx babel-node src/server.js"
+or "nodemon --exec ./node_modules/.bin/babel-node src/server.js"
+
+npm install --save sequelize@6.32.1
+npm install --save-dev sequelize-cli@6.6.1
+cd src
+npx sequelize-cli init
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+npm install --save mysql2@2.2.5
+Tạo migrations: npx sequelize-cli db:migrate (lưu ý cài biến môi trường NODE_ENV) 
+và cài mysql2 
+
+5. Tạo Seeder: npx sequelize-cli seed:generate --name demo-user
+
+---------------------------------
+cứ code theo thế này có ngu không, hay làm nhiều sẽ tự nhớ.
