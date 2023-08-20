@@ -1,3 +1,11 @@
+git init
+git config --global --add safe.directory D:/PROJECT/FullStackEric
+git status
+git add .
+git commit -m "my first commit"
+git remote add origin https://github.com/lothanhdat/LTDHealthCare.git
+git push origin ltdBranch
+
 npm -v
 npm init
 npm install express
@@ -11,6 +19,7 @@ fix babel-node' is not recognized as an internal or external command
 "nodemon --exec npx babel-node src/server.js"
 or "nodemon --exec ./node_modules/.bin/babel-node src/server.js"
 
+install XAMPP
 npm install --save sequelize@6.32.1
 npm install --save-dev sequelize-cli@6.6.1
 cd src
@@ -21,6 +30,7 @@ Tạo migrations: npx sequelize-cli db:migrate (lưu ý cài biến môi trườ
 và cài mysql2 
 
 5. Tạo Seeder: npx sequelize-cli seed:generate --name demo-user
+npx sequelize-cli db:seed:all
 
 ---------------------------------
 cứ code theo thế này có ngu không, hay làm nhiều sẽ tự nhớ.
