@@ -6,6 +6,10 @@ git commit -m "my first commit"
 git remote add origin https://github.com/lothanhdat/LTDHealthCare.git
 git push origin ltdBranch
 
+git branch
+git checkout main
+git push origin main
+
 npm -v
 npm init
 npm install express
@@ -26,11 +30,13 @@ cd src
 npx sequelize-cli init
 npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
 npm install --save mysql2@2.2.5
+tao data base tren xampp
 Tạo migrations: npx sequelize-cli db:migrate (lưu ý cài biến môi trường NODE_ENV) 
 và cài mysql2 
 
 5. Tạo Seeder: npx sequelize-cli seed:generate --name demo-user
 npx sequelize-cli db:seed:all
+
 
 ---------------------------------
 cứ code theo thế này có ngu không, hay làm nhiều sẽ tự nhớ.
