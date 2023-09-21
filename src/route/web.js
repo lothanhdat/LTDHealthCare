@@ -7,11 +7,15 @@ let router = express.Router();
 let initWebRoutes = (app) => {
     router.get('/', homeController.getHomePage);
     router.get('/about', homeController.getAboutPage);
+    router.get('/crud', homeController.getCRUD);
+    router.post('/post-crud', homeController.postCRUD);
+    // router.get('/post-crud', (req, res) => {
+    //     return res.send('post crud successful')
+    // });
     router.get('/hoiLTD', (req, res) => {
         return res.send('Hello world with LTD')
     });
     //rest api get post delete put(update)
-
 
     return app.use("/", router);
 }
